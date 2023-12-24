@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///purchase_order2.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///purchase_order2.db'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://yttgkbeiqjqwlm:019c2c410d94770b48ac5a43e4fdfd85f362a8a3cb4e9ff4e9c5fd0f016a1dd0@ec2-3-217-146-37.compute-1.amazonaws.com:5432/dbc6qk79du455a'
 app.config["SECRET_KEY"] = "lMAstReSeryOngfinaUdENTa"
 
