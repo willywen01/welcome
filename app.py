@@ -4,11 +4,13 @@ from wtforms import StringField, IntegerField, DecimalField, SubmitField
 from wtforms.validators import DataRequired, Email
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+import os
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///purchase_order2.db'
-app.config["SECRET_KEY"] = "lMAstReSeryOngfinaUdENTa"
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
+# CONNECT TO DB
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
 db = SQLAlchemy(app)
 
 class Order(db.Model):
