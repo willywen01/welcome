@@ -7,7 +7,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///purchase_order2.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ycoczsoyxpxxvj:dbe98aba166236d8b68a74e137dcb24320c6d7fd20be349b926aa2ec657c968b@ec2-3-232-218-211.compute-1.amazonaws.com:5432/denqopi1nvq40t'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://yttgkbeiqjqwlm:019c2c410d94770b48ac5a43e4fdfd85f362a8a3cb4e9ff4e9c5fd0f016a1dd0@ec2-3-217-146-37.compute-1.amazonaws.com:5432/dbc6qk79du455a'
 app.config["SECRET_KEY"] = "lMAstReSeryOngfinaUdENTa"
 
 db = SQLAlchemy(app)
